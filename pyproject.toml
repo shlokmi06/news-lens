@@ -2,6 +2,7 @@
 name = "newslens"
 version = "0.1.0"
 description = "Educational Streamlit web app combining news-style risk classification with evidence-based claim checking."
+license = { text = "MIT" }
 readme = "README.md"
 requires-python = ">=3.12,<3.14"
 dependencies = [
