@@ -1,0 +1,16 @@
+{
+  "dataset_profile": {
+    "total_rows_before": 1998,
+    "total_rows_after": 1991,
+    "removed_duplicates": 7,
+    "real_count": 992,
+    "fake_count": 999
+  },
+  "strip_source_artifacts": false,
+  "holdout_test": {
+    "accuracy": 0.9924812030075187,
+    "macro_f1": 0.9924810140894615,
+    "roc_auc": 0.9996482412060302,
+    "test_samples": 399
+  }
+}

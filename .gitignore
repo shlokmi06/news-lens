@@ -1,0 +1,29 @@
+# Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Python bytecode & caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Upstream Reference Repositories (clean-room audit only)
+references/
+
+# Secrets & Environment variables
+.env
+*.local
+
+# OS / Editor artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Distribution / Build
+build/
+dist/
+*.egg-info/

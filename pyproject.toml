@@ -1,0 +1,36 @@
+[project]
+name = "newslens"
+version = "0.1.0"
+description = "Educational Streamlit web app combining news-style risk classification with evidence-based claim checking."
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "streamlit>=1.40,<2.0",
+    "scikit-learn>=1.4,<2.0",
+    "pandas>=2.0,<3.0",
+    "numpy>=1.25,<3.0",
+    "joblib>=1.3,<2.0",
+    "pydantic>=2.0",
+    "python-dotenv>=1.0",
+    "groq>=0.9.0",
+    "tavily-python>=0.5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = [
+    "integration: opt-in live external service checks that consume third-party API quota",
+]
